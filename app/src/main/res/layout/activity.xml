@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:weightSum="10"
+    tools:context="joe2k01.xenonhd.com.browserinstaller.Activity">
+
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:padding="30dp">
+
+        <ImageButton
+            android:id="@+id/CAFChromiumButton"
+            android:src="@mipmap/ic_chromium"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:elevation="15dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/FireFoxButton"
+            android:src="@mipmap/ic_firefox"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:elevation="15dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="2"
+
+            />
+
+        <ImageButton
+            android:id="@+id/ViaButton"
+            android:src="@mipmap/ic_via"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:elevation="15dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+
+            />
+
+        <ImageButton
+            android:id="@+id/OperaButton"
+            android:src="@mipmap/ic_opera"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:elevation="15dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="2"
+
+            />
+
+    </GridLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+</LinearLayout>
