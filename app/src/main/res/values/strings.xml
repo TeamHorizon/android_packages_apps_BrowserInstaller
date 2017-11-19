@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Browser Installer</string>
+    <string name="notification_description">Downloading $</string>
 </resources>
