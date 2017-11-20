@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimary"
     android:weightSum="10"
     tools:context="joe2k01.xenonhd.com.browserinstaller.Activity">
 
@@ -73,12 +73,5 @@
             />
 
     </GridLayout>
-    
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-    </RelativeLayout>
 
 </LinearLayout>
