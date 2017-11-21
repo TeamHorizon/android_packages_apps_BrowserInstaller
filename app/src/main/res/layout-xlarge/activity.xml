@@ -12,45 +12,45 @@
 
     <Button
         android:id="@+id/CAFChromiumButton"
-        android:layout_height="150dp"
-        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
         android:background="@mipmap/ic_chromium"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
 
         />
 
     <Button
         android:id="@+id/FireFoxButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:background="@mipmap/ic_firefox"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
 
         />
 
     <Button
         android:id="@+id/ViaButton"
-        android:layout_height="150dp"
-        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
         android:background="@mipmap/ic_via"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="240dp"
 
         />
 
     <Button
         android:id="@+id/OperaButton"
-        android:layout_height="150dp"
-        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
         android:background="@mipmap/ic_opera"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="240dp"
 
         />
 
@@ -60,7 +60,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:text="@string/tap"
-        android:textSize="20dp"
+        android:textSize="60dp"
         android:textColor="@color/colorPrimaryLight"
 
         />

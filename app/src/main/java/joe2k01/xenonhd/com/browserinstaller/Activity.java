@@ -6,6 +6,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Environment;
@@ -14,13 +15,13 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 
 import java.io.File;
 
 public class Activity extends AppCompatActivity {
 
-    private ImageButton buttons[] = new ImageButton[4];
+    private Button buttons[] = new Button[4];
     private String browser;
     private String url = null;
     private final String chromiumUrl = "";
@@ -38,6 +39,7 @@ public class Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         buttons[0] = findViewById(R.id.CAFChromiumButton);
         buttons[1] = findViewById(R.id.FireFoxButton);
         buttons[2] = findViewById(R.id.OperaButton);
