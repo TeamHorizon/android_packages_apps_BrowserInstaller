@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="joe2k01.xenonhd.com.browserinstaller.WelcomeActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_info"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/welcome"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tutorial"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/learnMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/learnMore"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_above="@id/cont"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/cont"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cont"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
