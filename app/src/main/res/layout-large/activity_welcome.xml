@@ -23,7 +23,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_welcome"/>
 
     <TextView
         android:id="@+id/tutorial"
