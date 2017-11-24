@@ -2,6 +2,7 @@ package joe2k01.xenonhd.com.browserinstaller;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 
 public class WelcomeActivity extends Activity {
 
-    private Button cont;
+    private Button next;
     private ImageButton info;
 
 
@@ -20,10 +21,12 @@ public class WelcomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        cont = findViewById(R.id.cont);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        next = findViewById(R.id.next);
         info = findViewById(R.id.info);
 
-        cont.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
