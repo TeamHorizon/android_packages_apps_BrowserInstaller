@@ -67,13 +67,6 @@
         android:textColor="@color/colorPrimary"
         android:background="@color/colorPrimaryLight"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="@color/colorPrimaryLight"
-        android:layout_above="@id/learnMore"
-        android:layout_marginBottom="1dp"/>
-
     <TextView
         android:id="@+id/learnMore"
         android:layout_width="wrap_content"
@@ -85,5 +78,12 @@
         android:text="@string/learnMore"
         android:textSize="24dp"
         android:textColor="@color/colorPrimaryLight"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimaryLight"
+        android:layout_above="@id/learnMore"
+        android:layout_marginBottom="1dp"/>
 
 </RelativeLayout>
