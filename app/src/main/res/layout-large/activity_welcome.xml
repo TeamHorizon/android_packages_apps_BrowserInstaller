@@ -1,71 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xenonhd.browserinstaller.Activity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    tools:context="com.xenonhd.browserinstaller.Activity">
 
 
     <ImageButton
         android:id="@+id/info"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:scaleType="fitStart"
-        android:src="@drawable/ic_info"
-        android:background="@null"
-        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_info" />
 
     <ImageView
         android:id="@+id/img"
         android:layout_width="500dp"
         android:layout_height="500dp"
-        android:src="@mipmap/ic_welcome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        />
+        android:src="@mipmap/ic_welcome" />
 
 
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="10dp"
         android:layout_below="@id/img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
         android:text="@string/welcome"
-        android:textSize="40dp"
         android:textColor="@color/colorPrimaryLight"
-        />
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/tutorial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_below="@id/welcome"
         android:layout_marginTop="5dp"
         android:text="@string/tutorial"
-        android:textSize="24dp"
-        android:textColor="@color/colorPrimaryLight"/>
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="24dp" />
 
     <Button
         android:id="@+id/next"
         android:layout_width="140dp"
         android:layout_height="60dp"
-        android:layout_below="@id/tutorial"
-        android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
+        android:layout_below="@id/tutorial"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryLight"
         android:text="@string/next"
-        android:textSize="20dp"
         android:textColor="@color/colorPrimary"
-        android:background="@color/colorPrimaryLight"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/learnMore"
@@ -76,14 +73,14 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="@string/learnMore"
-        android:textSize="24dp"
-        android:textColor="@color/colorPrimaryLight"/>
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="24dp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="4dp"
-        android:background="@color/colorPrimaryLight"
         android:layout_above="@id/learnMore"
-        android:layout_marginBottom="1dp"/>
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorPrimaryLight" />
 
 </RelativeLayout>

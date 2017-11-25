@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorPrimary"
+    android:orientation="vertical"
     android:weightSum="10"
     tools:context="com.xenonhd.browserinstaller.Activity">
 
@@ -15,14 +14,14 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimaryLight"
         app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        android:backgroundTint="@color/colorPrimaryLight">
+        app:cardElevation="20dp">
 
         <Button
             android:id="@+id/CAFChromiumButton"
-            android:layout_height="150dp"
             android:layout_width="150dp"
+            android:layout_height="150dp"
             android:background="@mipmap/ic_chromium"
 
             />
@@ -33,12 +32,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimaryLight"
         app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        android:backgroundTint="@color/colorPrimaryLight">
+        app:cardElevation="20dp">
 
         <Button
             android:id="@+id/FirefoxButton"
@@ -54,16 +53,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="10dp"
         android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/colorPrimaryLight"
         app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        android:backgroundTint="@color/colorPrimaryLight">
+        app:cardElevation="20dp">
 
         <Button
             android:id="@+id/ViaButton"
-            android:layout_height="150dp"
             android:layout_width="150dp"
+            android:layout_height="150dp"
             android:background="@mipmap/ic_via"
 
             />
@@ -75,16 +74,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
         android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/colorPrimaryLight"
         app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        android:backgroundTint="@color/colorPrimaryLight">
+        app:cardElevation="20dp">
 
         <Button
             android:id="@+id/OperaButton"
-            android:layout_height="150dp"
             android:layout_width="150dp"
+            android:layout_height="150dp"
             android:background="@mipmap/ic_opera"
 
             />
@@ -100,16 +99,16 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:text="@string/tap"
-        android:textSize="15dp"
         android:textColor="@color/colorPrimaryLight"
+        android:textSize="15dp"
 
         />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/colorPrimaryLight"
         android:layout_above="@id/tap"
-        android:layout_marginBottom="1dp"/>
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorPrimaryLight" />
 
 </RelativeLayout>

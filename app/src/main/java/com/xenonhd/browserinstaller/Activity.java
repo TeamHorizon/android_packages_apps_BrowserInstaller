@@ -21,18 +21,29 @@ import java.io.File;
 
 public class Activity extends AppCompatActivity {
 
-    private Button buttons[] = new Button[4];
-    private String browser;
-    private String url = null;
-    private final String chromiumUrl = "";
-    private final String firefoxUrl = "";
-    private final String operaUrl = "";
-    private final String viaUrl = "";
-
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
+    private final String chromiumUrl = "";
+    private final String firefoxUrl = "";
+    private final String operaUrl = "";
+    private final String viaUrl = "";
+    private Button buttons[] = new Button[4];
+    private String browser;
+    private String url = null;
+    private BroadcastReceiver downloadReceiver = new BroadcastReceiver() {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            Intent install = new Intent(Intent.ACTION_VIEW);
+            install.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/" + browser + ".apk")), "application/vnd.android.package-archive");
+            install.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(install);
+
+        }
     };
 
     @Override
@@ -69,19 +80,6 @@ public class Activity extends AppCompatActivity {
 
         }
     }
-
-    private BroadcastReceiver downloadReceiver = new BroadcastReceiver() {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-
-            Intent install = new Intent(Intent.ACTION_VIEW);
-            install.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/" + browser + ".apk")), "application/vnd.android.package-archive");
-            install.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(install);
-
-        }
-    };
 
     private void performInstall(View v) {
 
