@@ -74,7 +74,6 @@ public class Activity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     performInstall(v);
-                    System.out.println(v.getId());
                 }
             });
 
