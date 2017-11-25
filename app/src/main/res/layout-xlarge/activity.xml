@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/colorPrimary"
     android:weightSum="10"
-    tools:context="joe2k01.xenonhd.com.browserinstaller.Activity">
+    tools:context="com.xenonhd.browserinstaller.Activity">
 
     <android.support.v7.widget.CardView
         android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
         android:backgroundTint="@color/colorPrimaryLight">
 
         <Button
-            android:id="@+id/FireFoxButton"
+            android:id="@+id/FirefoxButton"
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:background="@mipmap/ic_firefox"

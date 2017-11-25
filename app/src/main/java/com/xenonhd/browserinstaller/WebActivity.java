@@ -1,7 +1,7 @@
-package joe2k01.xenonhd.com.browserinstaller;
+package com.xenonhd.browserinstaller;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 
 public class WebActivity extends AppCompatActivity {

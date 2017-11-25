@@ -1,20 +1,17 @@
-package joe2k01.xenonhd.com.browserinstaller;
+package com.xenonhd.browserinstaller;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 public class WelcomeActivity extends Activity {
 
     private Button next;
     private ImageButton info;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +27,7 @@ public class WelcomeActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                Intent main = new Intent(getApplicationContext(), joe2k01.xenonhd.com.browserinstaller.Activity.class);
+                Intent main = new Intent(getApplicationContext(), com.xenonhd.browserinstaller.Activity.class);
                 finish();
                 startActivity(main);
 

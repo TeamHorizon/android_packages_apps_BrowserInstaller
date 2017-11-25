@@ -1,4 +1,4 @@
-package joe2k01.xenonhd.com.browserinstaller;
+package com.xenonhd.browserinstaller;
 
 import android.Manifest;
 import android.app.DownloadManager;
@@ -9,11 +9,11 @@ import android.content.IntentFilter;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
@@ -25,7 +25,7 @@ public class Activity extends AppCompatActivity {
     private String browser;
     private String url = null;
     private final String chromiumUrl = "";
-    private final String fireFoxUrl = "";
+    private final String firefoxUrl = "";
     private final String operaUrl = "";
     private final String viaUrl = "";
 
@@ -41,7 +41,7 @@ public class Activity extends AppCompatActivity {
         setContentView(R.layout.activity);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         buttons[0] = findViewById(R.id.CAFChromiumButton);
-        buttons[1] = findViewById(R.id.FireFoxButton);
+        buttons[1] = findViewById(R.id.FirefoxButton);
         buttons[2] = findViewById(R.id.OperaButton);
         buttons[3] = findViewById(R.id.ViaButton);
 
@@ -57,7 +57,7 @@ public class Activity extends AppCompatActivity {
             );
         }
 
-        for(int n = 0; n < 4; n ++){
+        for (int n = 0; n < 4; n++) {
 
             buttons[n].setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -83,35 +83,34 @@ public class Activity extends AppCompatActivity {
         }
     };
 
-
     private void performInstall(View v) {
 
         switch (v.getId()) {
 
             case R.id.CAFChromiumButton:
-                browser = "chromium";
+                browser = "Chromium";
                 url = chromiumUrl;
                 break;
 
-            case R.id.FireFoxButton:
-                browser = "firefox";
-                url = fireFoxUrl;
+            case R.id.FirefoxButton:
+                browser = "Firefox";
+                url = firefoxUrl;
                 break;
 
             case R.id.OperaButton:
-                browser = "opera";
+                browser = "Opera";
                 url = operaUrl;
                 break;
 
             case R.id.ViaButton:
-                browser = "via";
+                browser = "Via";
                 url = viaUrl;
                 break;
         }
 
         DownloadManager.Request req = new DownloadManager.Request(Uri.parse(url));
         req.setTitle(getString(R.string.app_name));
-        req.setDescription(getString(R.string.notification_description).replace("$", browser));
+        req.setDescription(getString(R.string.notification).replace("$", browser));
         req.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
         req.setDestinationInExternalPublicDir("", browser + ".apk");
         DownloadManager mgr = (DownloadManager) this.getSystemService(Context.DOWNLOAD_SERVICE);

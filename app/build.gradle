@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "joe2k01.xenonhd.com.browserinstaller"
+        applicationId "com.xenonhd.browserinstaller"
         minSdkVersion 26
         targetSdkVersion 26
         versionCode 1

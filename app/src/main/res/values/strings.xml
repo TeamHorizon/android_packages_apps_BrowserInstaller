@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Browser Installer</string>
-    <string name="learnMore">Are you confused? Learn more by tapping on the info button (top right of your screen).</string>
-    <string name="welcome">Welcome to BrowserInstaller</string>
-    <string name="tutorial">BrowserInstaller lets you choose which browser will be installed in your device.</string>
-    <string name="next">Next</string>
-    <string name="tap">Tap one of the cards to install one of the browsers.</string>
-    <string name="notification_description">Downloading $</string>
-</resources>
