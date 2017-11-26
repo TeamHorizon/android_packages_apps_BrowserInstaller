@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/welcome"
         android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="@string/tutorial"
         android:textColor="@color/colorPrimaryDark"
