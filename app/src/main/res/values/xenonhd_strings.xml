@@ -12,13 +12,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <resources>
     <string name="app_name">Browser Installer</string>
-    <string name="learnMore">Are you confused? Learn more by tapping on the info button (top right of your screen).</string>
     <string name="welcome">Welcome to BrowserInstaller</string>
-    <string name="tutorial">BrowserInstaller lets you choose which browser will be installed in your device.</string>
-    <string name="next">Next</string>
-    <string name="tap">Tap one of the cards to install one of the browsers.</string>
+    <string name="learn_more">Tap the icon in top right corner to learn more</string>
+    <string name="tutorial">This app will let you choose which browser you want to use by default</string>
+    <string name="instruction">Tap on the icon of your favorite browser to download it</string>
+    <string name="next">Continue</string>
     <string name="notification">Downloading $</string>
 </resources>

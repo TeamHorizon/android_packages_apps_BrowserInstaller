@@ -4,17 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.xenonhd.browserinstaller.Activity">
-
+    tools:context="com.xenonhd.browserinstaller.WelcomeActivity">
 
     <ImageButton
         android:id="@+id/info"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
         android:background="@null"
         android:scaleType="fitStart"
         android:src="@drawable/ic_info" />
@@ -27,60 +26,57 @@
         android:layout_marginTop="30dp"
         android:src="@mipmap/ic_welcome" />
 
-
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/img"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="@string/welcome"
-        android:textColor="@color/colorPrimaryLight"
-        android:textSize="40dp" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/tutorial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/welcome"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
         android:text="@string/tutorial"
-        android:textColor="@color/colorPrimaryLight"
-        android:textSize="24dp" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/next"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
-        android:layout_alignParentRight="true"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
         android:layout_below="@id/tutorial"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryLight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
         android:text="@string/next"
         android:textColor="@color/colorPrimary"
-        android:textSize="20dp" />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/learnMore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/learnMore"
-        android:textColor="@color/colorPrimaryLight"
-        android:textSize="24dp" />
+        android:text="@string/learn_more"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="4dp"
+        android:background="@color/colorAccent"
         android:layout_above="@id/learnMore"
-        android:layout_marginBottom="1dp"
-        android:background="@color/colorPrimaryLight" />
+        android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>

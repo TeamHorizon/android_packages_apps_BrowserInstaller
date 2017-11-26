@@ -12,9 +12,11 @@
     <android.support.v7.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorAccent"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dp">
 
@@ -22,20 +24,18 @@
             android:id="@+id/CAFChromiumButton"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:background="@mipmap/ic_chromium"
-
-            />
+            android:background="@mipmap/ic_chromium" />
 
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorAccent"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dp">
 
@@ -43,9 +43,7 @@
             android:id="@+id/FirefoxButton"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:background="@mipmap/ic_firefox"
-
-            />
+            android:background="@mipmap/ic_firefox" />
 
     </android.support.v7.widget.CardView>
 
@@ -53,9 +51,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="80dp"
-        android:layout_marginLeft="10dp"
-        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/colorAccent"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dp">
 
@@ -63,9 +62,7 @@
             android:id="@+id/ViaButton"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:background="@mipmap/ic_via"
-
-            />
+            android:background="@mipmap/ic_via" />
 
     </android.support.v7.widget.CardView>
 
@@ -73,10 +70,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="80dp"
-        android:layout_marginRight="10dp"
-        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/colorAccent"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dp">
 
@@ -84,9 +81,7 @@
             android:id="@+id/OperaButton"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:background="@mipmap/ic_opera"
-
-            />
+            android:background="@mipmap/ic_opera" />
 
     </android.support.v7.widget.CardView>
 
@@ -95,20 +90,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:text="@string/tap"
-        android:textColor="@color/colorPrimaryLight"
-        android:textSize="15dp"
-
-        />
+        android:layout_marginBottom="10dp"
+        android:gravity="center" 
+        android:text="@string/instruction"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_above="@id/tap"
-        android:layout_marginBottom="1dp"
-        android:background="@color/colorPrimaryLight" />
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent" />
 
 </RelativeLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">@*android:color/background_device_default_light</color>
-    <color name="colorPrimaryLight">@*android:color/accent_device_default_light</color>
+    <color name="colorPrimaryDark">@*android:color/background_device_default_dark</color>
     <color name="colorAccent">@*android:color/accent_device_default_light</color>
     <color name="ic_launcher_background">@color/colorPrimary</color>
 </resources>
