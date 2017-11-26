@@ -46,6 +46,7 @@ public class Activity extends AppCompatActivity {
     private Button buttons[] = new Button[4];
     private String browser;
     private String url = null;
+    private String appPackageName = null;
     private BroadcastReceiver downloadReceiver = new BroadcastReceiver() {
 
         @Override
@@ -93,6 +94,16 @@ public class Activity extends AppCompatActivity {
         }
     }
 
+    private boolean isPlayStoreThere() {
+        try {
+            getApplicationContext().getPackageManager().getPackageInfo("com.android.vending", 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+        return true;
+    }
+
+
     private void performInstall(View v) {
 
         switch (v.getId()) {
@@ -105,29 +116,36 @@ public class Activity extends AppCompatActivity {
             case R.id.FirefoxButton:
                 browser = "Firefox";
                 url = firefoxUrl;
+                appPackageName = getString(R.string.firefoxPackage);
                 break;
 
             case R.id.OperaButton:
                 browser = "Opera";
                 url = operaUrl;
+                appPackageName = getString(R.string.operaPackage);
                 break;
 
             case R.id.ViaButton:
                 browser = "Via";
                 url = viaUrl;
+                appPackageName = getString(R.string.viaPackage);
                 break;
         }
 
-        DownloadManager.Request req = new DownloadManager.Request(Uri.parse(url));
-        req.setTitle(getString(R.string.app_name));
-        req.setDescription(getString(R.string.notification).replace("$", browser));
-        req.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        req.setDestinationInExternalPublicDir("", browser + ".apk");
-        DownloadManager mgr = (DownloadManager) this.getSystemService(Context.DOWNLOAD_SERVICE);
-        mgr.enqueue(req);
+        if (isPlayStoreThere() && appPackageName != null) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+        } else {
+            DownloadManager.Request req = new DownloadManager.Request(Uri.parse(url));
+            req.setTitle(getString(R.string.app_name));
+            req.setDescription(getString(R.string.notification).replace("$", browser));
+            req.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+            req.setDestinationInExternalPublicDir("", browser + ".apk");
+            DownloadManager mgr = (DownloadManager) this.getSystemService(Context.DOWNLOAD_SERVICE);
+            mgr.enqueue(req);
 
-        IntentFilter filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
-        registerReceiver(downloadReceiver, filter);
+            IntentFilter filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
+            registerReceiver(downloadReceiver, filter);
+        }
 
     }
 }
