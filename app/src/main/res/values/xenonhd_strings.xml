@@ -21,4 +21,7 @@
     <string name="instruction">Tap on the icon of your favorite browser to download it</string>
     <string name="next">Continue</string>
     <string name="notification">Downloading $</string>
+    <string name="alert">Cool, now what?</string>
+    <string name="help">Do you want to freeze this app?</string>
+    <string name="bye">Okay, enjoy your browser</string>
 </resources>

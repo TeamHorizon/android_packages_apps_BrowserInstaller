@@ -14,9 +14,11 @@
 package com.xenonhd.browserinstaller;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ActivityInfo;
@@ -25,15 +27,18 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
+import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.File;
 
 public class Activity extends AppCompatActivity {
 
+    private static final int DONE = 1;
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {
             Manifest.permission.READ_EXTERNAL_STORAGE,
@@ -107,6 +112,28 @@ public class Activity extends AppCompatActivity {
         return true;
     }
 
+    private void showUninstall() {
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(this);
+        mBuilder.setTitle(R.string.alert)
+                .setMessage(R.string.help)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent freeze = new Intent();
+                        freeze.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                        Uri browserInstaller = Uri.fromParts("package", getPackageName(), null);
+                        freeze.setData(browserInstaller);
+                        startActivity(freeze);
+                    }
+                })
+                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(Activity.this, R.string.bye, Toast.LENGTH_LONG).show();
+                    }
+                }).show();
+    }
+
 
     private void performInstall(View v) {
 
@@ -150,7 +177,7 @@ public class Activity extends AppCompatActivity {
         }
 
         if (isPlayStoreThere() && appPackageName != null) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+            startActivityForResult(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)), DONE);
         } else {
             DownloadManager.Request req = new DownloadManager.Request(Uri.parse(url));
             req.setTitle(getString(R.string.app_name));
@@ -165,4 +192,21 @@ public class Activity extends AppCompatActivity {
         }
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == DONE) {
+            try {
+                if (appPackageName != null)
+                    getPackageManager().getPackageInfo(appPackageName, PackageManager.GET_ACTIVITIES);
+                else
+                    getPackageManager().getPackageInfo("to fill later", PackageManager.GET_ACTIVITIES);
+
+                showUninstall();
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }
