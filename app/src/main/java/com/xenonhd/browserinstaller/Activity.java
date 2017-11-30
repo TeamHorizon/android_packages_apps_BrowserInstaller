@@ -121,6 +121,7 @@ public class Activity extends AppCompatActivity {
             case R.id.CAFChromiumButton:
                 browser = "Chromium";
                 url = chromiumUrl;
+                appPackageName = null;
                 break;
 
             case R.id.DolphinButton:
