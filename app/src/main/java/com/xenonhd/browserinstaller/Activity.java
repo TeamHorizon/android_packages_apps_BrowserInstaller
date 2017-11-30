@@ -68,11 +68,11 @@ public class Activity extends AppCompatActivity {
         setContentView(R.layout.activity);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         buttons[0] = findViewById(R.id.CAFChromiumButton);
-        buttons[1] = findViewById(R.id.FirefoxButton);
-        buttons[2] = findViewById(R.id.OperaButton);
-        buttons[3] = findViewById(R.id.ViaButton);
-        buttons[4] = findViewById(R.id.ChromeButton);
-        buttons[5] = findViewById(R.id.DolphinButton);
+        buttons[1] = findViewById(R.id.ChromeButton);
+        buttons[2] = findViewById(R.id.DolphinButton);
+        buttons[3] = findViewById(R.id.FirefoxButton);
+        buttons[4] = findViewById(R.id.OperaButton);
+        buttons[5] = findViewById(R.id.ViaButton);
 
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
