@@ -13,6 +13,8 @@
 
 <resources>
 
+    <string name="chromePackage">com.android.chrome</string>
+    <string name="dolphinPackage">mobi.mgeek.TunnyBrowser</string>
     <string name="firefoxPackage">org.mozilla.firefox</string>
     <string name="operaPackage">com.opera.browser</string>
     <string name="viaPackage">mark.via.gp</string>

@@ -39,11 +39,13 @@ public class Activity extends AppCompatActivity {
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
+    private final String chromeUrl = "";
     private final String chromiumUrl = "";
+    private final String dolphinUrl = "";
     private final String firefoxUrl = "";
     private final String operaUrl = "";
     private final String viaUrl = "";
-    private Button buttons[] = new Button[4];
+    private Button buttons[] = new Button[6];
     private String browser;
     private String url = null;
     private String appPackageName = null;
@@ -69,6 +71,8 @@ public class Activity extends AppCompatActivity {
         buttons[1] = findViewById(R.id.FirefoxButton);
         buttons[2] = findViewById(R.id.OperaButton);
         buttons[3] = findViewById(R.id.ViaButton);
+        buttons[4] = findViewById(R.id.ChromeButton);
+        buttons[5] = findViewById(R.id.DolphinButton);
 
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
@@ -82,7 +86,7 @@ public class Activity extends AppCompatActivity {
             );
         }
 
-        for (int n = 0; n < 4; n++) {
+        for (int n = 0; n < 6; n++) {
 
             buttons[n].setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -108,9 +112,21 @@ public class Activity extends AppCompatActivity {
 
         switch (v.getId()) {
 
+            case R.id.ChromeButton:
+                browser = "Chrome";
+                url = chromeUrl;
+                appPackageName = getString(R.string.chromePackage);
+                break;
+
             case R.id.CAFChromiumButton:
                 browser = "Chromium";
                 url = chromiumUrl;
+                break;
+
+            case R.id.DolphinButton:
+                browser = "Dolphin";
+                url = dolphinUrl;
+                appPackageName = getString(R.string.dolphinPackage);
                 break;
 
             case R.id.FirefoxButton:
