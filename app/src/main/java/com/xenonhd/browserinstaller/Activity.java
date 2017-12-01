@@ -44,12 +44,6 @@ public class Activity extends AppCompatActivity {
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
-    private final String chromeUrl = "";
-    private final String chromiumUrl = "";
-    private final String dolphinUrl = "";
-    private final String firefoxUrl = "";
-    private final String operaUrl = "";
-    private final String viaUrl = "";
     private Button buttons[] = new Button[6];
     private String browser;
     private String url = null;
@@ -62,7 +56,7 @@ public class Activity extends AppCompatActivity {
             Intent install = new Intent(Intent.ACTION_VIEW);
             install.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/" + browser + ".apk")), "application/vnd.android.package-archive");
             install.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(install);
+            startActivityForResult(install, DONE);
 
         }
     };
@@ -141,37 +135,37 @@ public class Activity extends AppCompatActivity {
 
             case R.id.ChromeButton:
                 browser = "Chrome";
-                url = chromeUrl;
+                url = getString(R.string.chromeXenonServer);
                 appPackageName = getString(R.string.chromePackage);
                 break;
 
             case R.id.CAFChromiumButton:
                 browser = "Chromium";
-                url = chromiumUrl;
+                url = getString(R.string.chromiumXenonServer);
                 appPackageName = null;
                 break;
 
             case R.id.DolphinButton:
                 browser = "Dolphin";
-                url = dolphinUrl;
+                url = getString(R.string.dolphinXenonServer);
                 appPackageName = getString(R.string.dolphinPackage);
                 break;
 
             case R.id.FirefoxButton:
                 browser = "Firefox";
-                url = firefoxUrl;
+                url = getString(R.string.firefoxXenonServer);
                 appPackageName = getString(R.string.firefoxPackage);
                 break;
 
             case R.id.OperaButton:
                 browser = "Opera";
-                url = operaUrl;
+                url = getString(R.string.operaXenonServer);
                 appPackageName = getString(R.string.operaPackage);
                 break;
 
             case R.id.ViaButton:
                 browser = "Via";
-                url = viaUrl;
+                url = getString(R.string.viaXenonServer);
                 appPackageName = getString(R.string.viaPackage);
                 break;
         }
