@@ -19,7 +19,6 @@ import android.webkit.WebView;
 
 public class WebActivity extends AppCompatActivity {
 
-    private static final String DOCS = "http://www.google.com";
     private WebView web;
 
     @Override
@@ -28,6 +27,6 @@ public class WebActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web);
 
         web = findViewById(R.id.webview);
-        web.loadUrl(DOCS);
+        web.loadUrl(getString(R.string.docs));
     }
 }

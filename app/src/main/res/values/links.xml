@@ -26,4 +26,5 @@
     <string name="operaXenonServer">https://mirrors.c0urier.net/android/teamhorizon/APK/com.opera.browser.apk</string>
     <string name="viaXenonServer">https://mirrors.c0urier.net/android/teamhorizon/APK/mark.via.gp.apk</string>
 
+    <string name="docs">https://github.com/TeamHorizon/android_packages_apps_BrowserInstaller/wiki</string>
 </resources>
