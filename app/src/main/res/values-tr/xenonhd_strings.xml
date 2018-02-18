@@ -16,8 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- App name -->
+  <string name="app_name">Tarayıcı yükleyici</string>
   <!-- Dialog -->
+  <string name="alert">Tarayıcı başarıyla yüklendi</string>
+  <string name="help">Artık bu uygulamayı Ayarlar\'dan devre dışı bırakabilirsiniz. Yapmak istiyor musun?</string>
   <!-- Main screen -->
+  <string name="instruction">İndirmek için favori tarayıcınızın simgesine dokunun</string>
   <!-- Notifications -->
+  <string name="notification">İndiriliyor $</string>
+  <string name="bye">Tarayıcınızın tadını çıkarın!</string>
   <!-- Welcome screen -->
+  <string name="welcome">Tarayıcı yükleyicisine Hoş geldiniz</string>
+  <string name="learn_more">Daha fazla bilgi edinmek için sağ üst köşedeki simgeye dokunun</string>
+  <string name="tutorial">Bu uygulama, varsayılan olarak hangi tarayıcıyı kullanmak istediğinizi seçmenize izin verir</string>
+  <string name="next">Devam et</string>
 </resources>
