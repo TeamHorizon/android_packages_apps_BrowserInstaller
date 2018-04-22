@@ -19,7 +19,7 @@
   <string name="app_name">Tarayıcı yükleyici</string>
   <!-- Dialog -->
   <string name="alert">Tarayıcı başarıyla yüklendi</string>
-  <string name="help">Artık bu uygulamayı Ayarlar\'dan devre dışı bırakabilirsiniz. Yapmak istiyor musun?</string>
+  <string name="help">Artık bu uygulamayı Ayarlar\'dan devre dışı bırakabilirsiniz. Bunu yapmak istiyor musun?</string>
   <!-- Main screen -->
   <string name="instruction">İndirmek için favori tarayıcınızın simgesine dokunun</string>
   <!-- Notifications -->
@@ -28,6 +28,6 @@
   <!-- Welcome screen -->
   <string name="welcome">Tarayıcı yükleyicisine Hoş geldiniz</string>
   <string name="learn_more">Daha fazla bilgi edinmek için sağ üst köşedeki simgeye dokunun</string>
-  <string name="tutorial">Bu uygulama, varsayılan olarak hangi tarayıcıyı kullanmak istediğinizi seçmenize izin verir</string>
+  <string name="tutorial">Bu uygulama varsayılan olarak hangi tarayıcıyı kullanmak istediğinizi seçmenize izin verir</string>
   <string name="next">Devam et</string>
 </resources>
