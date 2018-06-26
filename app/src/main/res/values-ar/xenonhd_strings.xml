@@ -16,8 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- App name -->
+  <string name="app_name">مثبت المتصفح</string>
   <!-- Dialog -->
+  <string name="alert">تم تثبيت المتصفح بنجاح</string>
+  <string name="help">الآن يمكنك تعطيل هذا التطبيق في الإعدادات. هل تريد القيام بذلك؟</string>
   <!-- Main screen -->
+  <string name="instruction">انقر على أيقونة المتصفح المفضل لديك لتحميله</string>
   <!-- Notifications -->
+  <string name="notification">جاري التحميل $</string>
+  <string name="bye">تمتع بالمتصفح الخاص بك!</string>
   <!-- Welcome screen -->
+  <string name="welcome">مرحبا بك في مثبت المتصفح</string>
+  <string name="learn_more">انقر فوق الرمز الموجود في أعلى الزاوية اليمنى لمعرفة المزيد</string>
+  <string name="tutorial">هذا التطبيق سوف يتيح لك أن تختار المتصفح الذي تريد استخدامه بشكل افتراضي</string>
+  <string name="next">تابع</string>
 </resources>
