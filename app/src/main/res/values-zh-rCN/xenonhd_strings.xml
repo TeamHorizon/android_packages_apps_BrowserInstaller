@@ -16,10 +16,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- App name -->
+  <string name="app_name">浏览器安装程序</string>
   <!-- Dialog -->
+  <string name="alert">已成功安装浏览器</string>
+  <string name="help">现在您可以在设置中禁用此应用程序。你想这么做吗？</string>
   <!-- Main screen -->
+  <string name="instruction">点击您喜爱的浏览器的图标下载它</string>
   <!-- Notifications -->
   <string name="notification">正在下载 $</string>
+  <string name="bye">享受您的浏览器！</string>
   <!-- Welcome screen -->
+  <string name="welcome">欢迎来到浏览器安装程序
+</string>
+  <string name="learn_more">点击右上角的图标了解更多</string>
+  <string name="tutorial">此应用程序将允许您选择默认情况下要使用的浏览器</string>
   <string name="next">继续</string>
 </resources>
