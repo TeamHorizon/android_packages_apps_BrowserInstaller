@@ -25,6 +25,8 @@ LOCAL_STATIC_JAVA_LIBRARIES += \
     android-support-v7-cardview \
     android-support-v7-recyclerview
 
+LOCAL_PRIVATE_PLATFORM_APIS := true
+
 include $(BUILD_PACKAGE)
 
 include $(CLEAR_VARS)
