@@ -23,7 +23,7 @@
   <!-- Main screen -->
   <string name="instruction">お気に入りのブラウザーのアイコンをタップしてダウンロードしてください</string>
   <!-- Notifications -->
-  <string name="notification">ダウンロード中</string>
+  <string name="notification">ダウンロード中 $</string>
   <string name="bye">ブラウザーをお楽しみ下さい</string>
   <!-- Welcome screen -->
   <string name="welcome">ブラウザーインストーラーにようこそ</string>

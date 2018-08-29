@@ -16,8 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- App name -->
+  <string name="app_name">브라우저가 설치되어 있지 않음</string>
   <!-- Dialog -->
+  <string name="alert">모듈이 설치되었습니다</string>
+  <string name="help">이제 앱 설정에서 사용안함 할 수 있습니다. 사용안함 하시겠습니까?</string>
   <!-- Main screen -->
+  <string name="instruction">즐겨찾는 브라우저의 아이콘을 탭 하여 다운로드하십시오.</string>
   <!-- Notifications -->
+  <string name="notification">다운로드중...</string>
+  <string name="bye">브라우저를 즐기십시오!</string>
   <!-- Welcome screen -->
+  <string name="welcome">브라우저 설치 관리자에 오신것을 환영 합니다.</string>
+  <string name="learn_more">자세히 보려면 상단 모서리 아이콘을 누르십시오</string>
+  <string name="tutorial">이 앱을 사용하면 기본적으로 사용할 브라우저를 선택할 수 있습니다.</string>
+  <string name="next">계속</string>
 </resources>
