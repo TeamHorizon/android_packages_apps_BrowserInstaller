@@ -5,20 +5,11 @@ LOCAL_PACKAGE_NAME := BrowserInstaller
 
 LOCAL_SRC_FILES := $(call all-java-files-under, java)
 
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-    frameworks/support/design/res \
-    frameworks/support/v7/appcompat/res \
-    frameworks/support/v7/cardview/res \
-    frameworks/support/v7/recyclerview/res
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
-LOCAL_AAPT_FLAGS := \
-    --auto-add-overlay \
-    --extra-packages android.support.design \
-    --extra-packages android.support.v7.appcompat \
-    --extra-packages android.support.v7.cardview \
-    --extra-packages android.support.v7.recyclerview
+LOCAL_USE_AAPT2 := true
 
-LOCAL_STATIC_JAVA_LIBRARIES += \
+LOCAL_STATIC_ANDROID_LIBRARIES += \
     android-support-design \
     android-support-v4 \
     android-support-v7-appcompat \
