@@ -15,9 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <!-- Dialog -->
-  <!-- Main screen -->
-  <!-- Notifications -->
-  <!-- Welcome screen -->
+    <string name="app_name">Instalador de navegador</string>
+    <!-- Notifications -->
+    <string name="notification">Descargando $</string>
+    <string name="bye">¡Disfrute de su navegador!</string>
 </resources>

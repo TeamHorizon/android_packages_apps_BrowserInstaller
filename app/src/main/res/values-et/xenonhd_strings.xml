@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">Brauseri paigaldaja</string>
-  <!-- Dialog -->
-  <string name="alert">Brauseri installimine õnnestus</string>
-  <string name="help">Nüüd saate keelata selle rakenduse seadete alt. Kas soovite seda teha?</string>
-  <!-- Main screen -->
-  <string name="instruction">Allalaadimiseks, puududage oma lemmikbrauseri ikooni</string>
-  <!-- Notifications -->
-  <string name="notification">Allalaadimine $</string>
-  <string name="bye">Nautige oma brauserit!</string>
-  <!-- Welcome screen -->
-  <string name="welcome">Tere tulemast brauseri paigaldajasse</string>
-  <string name="learn_more">Lisainformatsiooni saamiseks, puudutage üleval paremal nurgas olevat ikooni</string>
-  <string name="tutorial">See app võimaldab teil valida, millist brauserit soovite kasutada vaikimisi</string>
-  <string name="next">Jätka</string>
+    <string name="app_name">Brauseri paigaldaja</string>
+    <!-- Notifications -->
+    <string name="notification">Allalaadimine $</string>
+    <string name="bye">Nautige oma brauserit!</string>
 </resources>

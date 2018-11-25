@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">Πρόγραμμα εγκατάστασης του προγράμματος περιήγησης</string>
-  <!-- Dialog -->
-  <string name="alert">Ο περιηγητής εγκαταστάθηκε με επιτυχία</string>
-  <string name="help">Τώρα, μπορείτε να απενεργοποιήσετε αυτή την εφαρμογη στις ρυθμίσεις. Θέλετε να το κάνετε;</string>
-  <!-- Main screen -->
-  <string name="instruction">Πατήστε στο εικονίδιο του αγαπημένου σας προγράμματος περιήγησης, για να το κατεβάσετε</string>
-  <!-- Notifications -->
-  <string name="notification">Γίνεται λήψη $</string>
-  <string name="bye">Απολαύστε το πρόγραμμα περιήγησής σας!</string>
-  <!-- Welcome screen -->
-  <string name="welcome">Καλώς ήλθατε στον εγκαταστάτη προγράμματος περιήγησης</string>
-  <string name="learn_more">Πατήστε στο εικονίδιο στην επάνω δεξιά γωνία για να μάθετε περισσότερα</string>
-  <string name="tutorial">Αυτή η εφαρμογή θα σας αφήσει να επιλέξετε ποιο πρόγραμμα περιήγησης θέλετε να χρησιμοποιήσετε από προεπιλογή</string>
-  <string name="next">Συνέχεια</string>
+    <string name="app_name">Πρόγραμμα εγκατάστασης του προγράμματος περιήγησης</string>
+    <!-- Notifications -->
+    <string name="notification">Γίνεται λήψη $</string>
+    <string name="bye">Απολαύστε το πρόγραμμα περιήγησής σας!</string>
 </resources>

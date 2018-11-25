@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">Усталёўшчык браўзера</string>
-  <!-- Dialog -->
-  <string name="alert">Браўзер паспяхова ўсталяваны</string>
-  <string name="help">Цяпер вы можаце адключыць гэтую праграму ў наладах. Вы хочаце гэта зрабіць?</string>
-  <!-- Main screen -->
-  <string name="instruction">Націсніце на значок вашага любімага браўзэра, каб спампаваць яго</string>
-  <!-- Notifications -->
-  <string name="notification">Спампоўка $</string>
-  <string name="bye">Атрымлівайце асалоду з браўзерам!</string>
-  <!-- Welcome screen -->
-  <string name="welcome">Сардэчна запрашаем у Усталёўшчык браўзера</string>
-  <string name="learn_more">Націсніце на значок ў правым верхнім куце, каб даведацца больш</string>
-  <string name="tutorial">Гэтая праграма дазволіць вам выбраць браўзер, які вы хочаце выкарыстоўваць па змаўчанні</string>
-  <string name="next">Працягнуць</string>
+    <string name="app_name">Усталёўшчык браўзера</string>
+    <!-- Notifications -->
+    <string name="notification">Спампоўка $</string>
+    <string name="bye">Атрымлівайце асалоду з браўзерам!</string>
 </resources>

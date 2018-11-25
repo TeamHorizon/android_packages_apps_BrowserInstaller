@@ -15,9 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <!-- Dialog -->
-  <!-- Main screen -->
-  <!-- Notifications -->
-  <!-- Welcome screen -->
+    <string name="app_name">브라우저가 설치되어 있지 않음</string>
+    <!-- Notifications -->
+    <string name="notification">다운로드중...</string>
+    <string name="bye">브라우저를 즐기십시오!</string>
 </resources>

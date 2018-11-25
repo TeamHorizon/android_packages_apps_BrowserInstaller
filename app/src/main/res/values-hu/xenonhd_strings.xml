@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">Böngészőtelepítő</string>
-  <!-- Dialog -->
-  <string name="alert">Böngésző sikeresen telepítve</string>
-  <string name="help">Mostmár letilthatja az alkalmazást a beállításokban. Meg szeretné ezt tenni?</string>
-  <!-- Main screen -->
-  <string name="instruction">Érintse meg a kedvenc böngészője ikonját a letöltéséhez</string>
-  <!-- Notifications -->
-  <string name="notification">$ letöltése</string>
-  <string name="bye">Használja a böngészőjét egészséggel!</string>
-  <!-- Welcome screen -->
-  <string name="welcome">Üdvözli a Böngészőtelepítő</string>
-  <string name="learn_more">Érintse meg az ikont a jobb felső sarokban több információért</string>
-  <string name="tutorial">Az alkalmazással kiválaszthatja, melyik böngészőt szeretné használni</string>
-  <string name="next">Folytatás</string>
+    <string name="app_name">Böngészőtelepítő</string>
+    <!-- Notifications -->
+    <string name="notification">$ letöltése</string>
+    <string name="bye">Használja a böngészőjét egészséggel!</string>
 </resources>

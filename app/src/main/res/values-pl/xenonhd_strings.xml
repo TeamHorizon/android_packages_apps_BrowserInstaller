@@ -15,19 +15,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">Instalator przeglądarki</string>
-  <!-- Dialog -->
-  <string name="alert">Przeglądarka została zainstalowana</string>
-  <string name="help">Teraz możesz wyłączyć tę aplikację w Ustawieniach. Czy chcesz to zrobić?</string>
-  <!-- Main screen -->
-  <string name="instruction">Dotknij ikony ulubionej przeglądarki, aby ją pobrać</string>
-  <!-- Notifications -->
-  <string name="notification">Pobieranie $</string>
-  <string name="bye">Miłego korzystania z przeglądarki!</string>
-  <!-- Welcome screen -->
-  <string name="welcome">Witamy w Instalatorze przeglądarki</string>
-  <string name="learn_more">Dotknij ikony w prawym górnym rogu, aby dowiedzieć się więcej</string>
-  <string name="tutorial">Ta aplikacja pozwoli Ci wybrać jakiej przeglądarki chcesz używać domyślnie</string>
-  <string name="next">Kontynuuj</string>
+    <string name="app_name">Instalator przeglądarki</string>
+    <string name="tutorial">Wybierz którą przeglądarkę chcesz zainstalować, z listy poniżej</string>
+    <string name="install">Instaluj</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Via</item>
+    </string-array>
+    <!-- Notifications -->
+    <string name="notification">Pobieranie $</string>
+    <string name="bye">Miłego korzystania z przeglądarki!</string>
 </resources>

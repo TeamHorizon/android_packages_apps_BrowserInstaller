@@ -1,10 +1,25 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 XenonHD
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Browser Installer</string>
-    <string name="tutorial">Select which browser you want to install from the dropdown menu down here</string>
+    <string name="tutorial">Select which browser you want to install from the menu below</string>
     <string name="install">Install</string>
     <string-array name="browsers_array">
         <item>Chrome</item>
-        <item>FireFox</item>
+        <item>Firefox</item>
         <item>Opera</item>
         <item>Via</item>
     </string-array>
@@ -13,4 +28,7 @@
     <string name="notification">Downloading $</string>
     <string name="bye">Enjoy your browser!</string>
 
+    <!-- Toasts -->
+    <string name="not_connected">Please set up an internet connection first</string>
+    <string name="downloading">Download started</string>
 </resources>
