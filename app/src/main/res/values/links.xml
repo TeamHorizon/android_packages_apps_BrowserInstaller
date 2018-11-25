@@ -14,17 +14,12 @@
 <resources>
 
     <string name="chromePackage">com.android.chrome</string>
-    <string name="dolphinPackage">mobi.mgeek.TunnyBrowser</string>
     <string name="firefoxPackage">org.mozilla.firefox</string>
     <string name="operaPackage">com.opera.browser</string>
     <string name="viaPackage">mark.via.gp</string>
 
     <string name="chromeXenonServer">https://mirrors.c0urier.net/android/teamhorizon/APK/com.android.chrome.apk</string>
-    <string name="chromiumXenonServer">https://mirrors.c0urier.net/android/teamhorizon/APK/org.codeaurora.swe.browser.apk</string>
-    <string name="dolphinXenonServer">https://mirrors.c0urier.net/android/teamhorizon/APK/mobi.mgeek.TunnyBrowser.apk</string>
     <string name="firefoxXenonServer">https://mirrors.c0urier.net/android/teamhorizon/APK/org.mozilla.firefox.apk</string>
     <string name="operaXenonServer">https://mirrors.c0urier.net/android/teamhorizon/APK/com.opera.browser.apk</string>
     <string name="viaXenonServer">https://mirrors.c0urier.net/android/teamhorizon/APK/mark.via.gp.apk</string>
-
-    <string name="docs">https://github.com/TeamHorizon/android_packages_apps_BrowserInstaller/blob/o/DOCS.md</string>
 </resources>
