@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">Instalador do navegador</string>
-  <!-- Dialog -->
-  <string name="alert">Navegador instalado com sucesso</string>
-  <string name="help">Agora você pode desativar este aplicativo nas configurações. Você quer fazer isso?</string>
-  <!-- Main screen -->
-  <string name="instruction">Toque no ícone do seu navegador favorito para fazer o download</string>
-  <!-- Notifications -->
-  <string name="notification">Baixando $</string>
-  <string name="bye">Aproveite o seu navegador!</string>
-  <!-- Welcome screen -->
-  <string name="welcome">Bem-vindo ao instalador do navegador</string>
-  <string name="learn_more">Toque no ícone no canto superior direito para saber mais</string>
-  <string name="tutorial">Este aplicativo permitirá que você escolha qual navegador deseja usar por padrão</string>
-  <string name="next">Continuar</string>
+    <string name="app_name">Instalador do navegador</string>
+    <!-- Notifications -->
+    <string name="notification">Baixando $</string>
+    <string name="bye">Aproveite o seu navegador!</string>
 </resources>

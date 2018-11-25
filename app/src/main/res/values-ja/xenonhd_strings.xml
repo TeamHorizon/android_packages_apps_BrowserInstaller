@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">ブラウザーインストーラー</string>
-  <!-- Dialog -->
-  <string name="alert">ブラウザーが正常にインストールされました</string>
-  <string name="help">これで設定からこのアプリを無効にすることができます。そういたしますか？</string>
-  <!-- Main screen -->
-  <string name="instruction">お気に入りのブラウザーのアイコンをタップしてダウンロードしてください</string>
-  <!-- Notifications -->
-  <string name="notification">ダウンロード中</string>
-  <string name="bye">ブラウザーをお楽しみ下さい</string>
-  <!-- Welcome screen -->
-  <string name="welcome">ブラウザーインストーラーにようこそ</string>
-  <string name="learn_more">詳細は右上のアイコンをタップしてください</string>
-  <string name="tutorial">このアプリでは既定で使用するブラウザを選択できます</string>
-  <string name="next">続行</string>
+    <string name="app_name">ブラウザーインストーラー</string>
+    <!-- Notifications -->
+    <string name="notification">ダウンロード中 $</string>
+    <string name="bye">ブラウザーをお楽しみ下さい</string>
 </resources>

@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">Inštalátor prehliadača</string>
-  <!-- Dialog -->
-  <string name="alert">Prehliadač bol úspešne nainštalovaný</string>
-  <string name="help">Teraz môžete vypnúť túto aplikáciu v nastaveniach. Chcete to urobiť?</string>
-  <!-- Main screen -->
-  <string name="instruction">Kliknite na ikonu vášho obľúbeného prehliadača pre jeho stiahnutie</string>
-  <!-- Notifications -->
-  <string name="notification">Sťahovanie $</string>
-  <string name="bye">Užite si váš prehliadač!</string>
-  <!-- Welcome screen -->
-  <string name="welcome">Vitajte v inštalátore prehliadača</string>
-  <string name="learn_more">Kliknite na ikonu v pravom hornom rohu a dozviete sa viac</string>
-  <string name="tutorial">Táto aplikácia vám umožní vybrať prehliadač, ktorý chcete používať ako predvolený</string>
-  <string name="next">Pokračovať</string>
+    <string name="app_name">Inštalátor prehliadača</string>
+    <!-- Notifications -->
+    <string name="notification">Sťahovanie $</string>
+    <string name="bye">Užite si váš prehliadač!</string>
 </resources>
