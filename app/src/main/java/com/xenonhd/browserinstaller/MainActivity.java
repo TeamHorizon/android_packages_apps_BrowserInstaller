@@ -3,6 +3,7 @@ package com.xenonhd.browserinstaller;
 import android.Manifest;
 import android.app.DownloadManager;
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -19,7 +20,6 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
 
@@ -27,14 +27,13 @@ import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int[] icons = {R.mipmap.ic_chrome, R.mipmap.ic_firefox, R.mipmap.ic_opera, R.mipmap.ic_via};
-
     private static final int DONE = 1;
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
+    private int[] icons = {R.mipmap.ic_chrome, R.mipmap.ic_firefox, R.mipmap.ic_opera, R.mipmap.ic_via};
     private String url = null;
     private String browser;
     private String appPackageName = null;
@@ -88,11 +87,22 @@ public class MainActivity extends AppCompatActivity {
                             REQUEST_EXTERNAL_STORAGE
                     );
                 } else {
-                    performInstall(icons[(int)spinner.getSelectedItemId()]);
+                    performInstall(icons[(int) spinner.getSelectedItemId()]);
                 }
             }
         });
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        PackageManager packageManager = getApplicationContext().getPackageManager();
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+        if (intent.resolveActivity(packageManager) != null) {
+            ComponentName componentName = new ComponentName(getApplicationContext(), MainActivity.class);
+            packageManager.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+        }
     }
 
     private boolean isPlayStoreThere() {
