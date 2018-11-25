@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">瀏覽器安裝程式</string>
-  <!-- Dialog -->
-  <string name="alert">已成功安裝瀏覽器</string>
-  <string name="help">現在您可以在設定中停用此應用程式。您想這麼做嗎？</string>
-  <!-- Main screen -->
-  <string name="instruction">輕觸您喜歡的瀏覽器圖示下載</string>
-  <!-- Notifications -->
-  <string name="notification">正在下載 $</string>
-  <string name="bye">享受您的瀏覽器！</string>
-  <!-- Welcome screen -->
-  <string name="welcome">歡迎來到瀏覽器安裝程式</string>
-  <string name="learn_more">輕觸右上角的圖示瞭解更多</string>
-  <string name="tutorial">此應用程式將允許您選擇預設情況下要使用的瀏覽器</string>
-  <string name="next">繼續</string>
+    <string name="app_name">瀏覽器安裝程式</string>
+    <!-- Notifications -->
+    <string name="notification">正在下載 $</string>
+    <string name="bye">享受您的瀏覽器！</string>
 </resources>

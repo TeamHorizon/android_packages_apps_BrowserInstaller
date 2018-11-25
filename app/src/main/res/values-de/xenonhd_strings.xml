@@ -15,19 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- App name -->
-  <string name="app_name">Browser-Installierer</string>
-  <!-- Dialog -->
-  <string name="alert">Browser erfolgreich installiert</string>
-  <string name="help">Sie können diese App nun in den Einstellungen deaktivieren. Wollen Sie dies tun?</string>
-  <!-- Main screen -->
-  <string name="instruction">Tippen Sie auf das Icon Ihres Lieblingsbrowsers, um ihn herunterzuladen</string>
-  <!-- Notifications -->
-  <string name="notification">Herunterladen von $</string>
-  <string name="bye">Genießen Sie Ihren Browser!</string>
-  <!-- Welcome screen -->
-  <string name="welcome">Willkommen im Browser-Installierer</string>
-  <string name="learn_more">Tippen Sie auf das Symbol rechts oben, um mehr zu erfahren</string>
-  <string name="tutorial">Diese App lässt Sie auswählen, welchen Browser sie standardmäßig benutzen wollen</string>
-  <string name="next">Fortsetzen</string>
+    <string name="app_name">Browser-Installierer</string>
+    <!-- Notifications -->
+    <string name="notification">Herunterladen von $</string>
+    <string name="bye">Genießen Sie Ihren Browser!</string>
 </resources>
