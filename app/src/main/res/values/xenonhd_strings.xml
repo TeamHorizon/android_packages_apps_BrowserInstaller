@@ -13,4 +13,8 @@
     <string name="notification">Downloading $</string>
     <string name="bye">Enjoy your browser!</string>
 
+    <!-- Toasts -->
+    <string name="not_connected">Please set up an internet connection first</string>
+    <string name="downloading">Download started</string>
+
 </resources>
