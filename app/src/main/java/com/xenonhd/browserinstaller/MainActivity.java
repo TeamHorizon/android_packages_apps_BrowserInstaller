@@ -11,6 +11,8 @@ import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -22,6 +24,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -87,7 +90,12 @@ public class MainActivity extends AppCompatActivity {
                             REQUEST_EXTERNAL_STORAGE
                     );
                 } else {
-                    performInstall(icons[(int) spinner.getSelectedItemId()]);
+                    ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+                    if (activeNetworkInfo != null && activeNetworkInfo.isConnected())
+                        performInstall(icons[(int) spinner.getSelectedItemId()]);
+                    else
+                        Toast.makeText(MainActivity.this, R.string.not_connected, Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -156,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
 
             IntentFilter filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
             registerReceiver(downloadReceiver, filter);
+            Toast.makeText(MainActivity.this, R.string.downloading, Toast.LENGTH_LONG).show();
         }
 
     }
