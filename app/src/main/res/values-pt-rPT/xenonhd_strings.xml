@@ -19,4 +19,5 @@
     <!-- Notifications -->
     <string name="notification">A transferir $</string>
     <string name="bye">Desfrute do seu navegador!</string>
+    <!-- Toasts -->
 </resources>

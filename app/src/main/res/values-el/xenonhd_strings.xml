@@ -19,4 +19,5 @@
     <!-- Notifications -->
     <string name="notification">Γίνεται λήψη $</string>
     <string name="bye">Απολαύστε το πρόγραμμα περιήγησής σας!</string>
+    <!-- Toasts -->
 </resources>

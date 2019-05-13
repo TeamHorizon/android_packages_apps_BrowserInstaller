@@ -16,7 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Installazione del browser</string>
+    <string name="tutorial">Seleziona quale browser vuoi installare dal menu qui sotto</string>
+    <string name="install">Installa</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Via</item>
+    </string-array>
     <!-- Notifications -->
     <string name="notification">Download</string>
     <string name="bye">Godetevi il vostro browser!</string>
+    <!-- Toasts -->
+    <string name="not_connected">Si prega di impostare prima una connessione internet</string>
+    <string name="downloading">Download avviato</string>
 </resources>

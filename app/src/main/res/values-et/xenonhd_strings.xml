@@ -19,4 +19,5 @@
     <!-- Notifications -->
     <string name="notification">Allalaadimine $</string>
     <string name="bye">Nautige oma brauserit!</string>
+    <!-- Toasts -->
 </resources>

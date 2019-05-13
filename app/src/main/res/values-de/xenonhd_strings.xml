@@ -19,4 +19,5 @@
     <!-- Notifications -->
     <string name="notification">Herunterladen von $</string>
     <string name="bye">Genießen Sie Ihren Browser!</string>
+    <!-- Toasts -->
 </resources>

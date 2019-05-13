@@ -27,4 +27,7 @@
     <!-- Notifications -->
     <string name="notification">Pobieranie $</string>
     <string name="bye">Miłego korzystania z przeglądarki!</string>
+    <!-- Toasts -->
+    <string name="not_connected">Sprawdź połączenie z Internetem</string>
+    <string name="downloading">Rozpoczęto pobieranie</string>
 </resources>

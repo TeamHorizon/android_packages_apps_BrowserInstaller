@@ -16,7 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Tarayıcı yükleyici</string>
+    <string name="tutorial">Aşağıdaki menüden yüklemek istediğiniz tarayıcıyı seçin</string>
+    <string name="install">Yükle</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Via</item>
+    </string-array>
     <!-- Notifications -->
     <string name="notification">İndiriliyor $</string>
     <string name="bye">Tarayıcınızın tadını çıkarın!</string>
+    <!-- Toasts -->
+    <string name="not_connected">Lütfen önce bir internet bağlantısı kurun</string>
+    <string name="downloading">İndirme başlatıldı</string>
 </resources>

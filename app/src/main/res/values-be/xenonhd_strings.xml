@@ -19,4 +19,5 @@
     <!-- Notifications -->
     <string name="notification">Спампоўка $</string>
     <string name="bye">Атрымлівайце асалоду з браўзерам!</string>
+    <!-- Toasts -->
 </resources>

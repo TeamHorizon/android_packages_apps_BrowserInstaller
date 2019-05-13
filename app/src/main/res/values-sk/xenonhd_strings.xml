@@ -19,4 +19,5 @@
     <!-- Notifications -->
     <string name="notification">Sťahovanie $</string>
     <string name="bye">Užite si váš prehliadač!</string>
+    <!-- Toasts -->
 </resources>

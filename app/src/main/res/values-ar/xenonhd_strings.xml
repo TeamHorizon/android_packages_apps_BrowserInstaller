@@ -16,7 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">مثبت المتصفح</string>
+    <string name="tutorial">أختر المتصفح الذي تريد تثبيته من القائمة أدناه</string>
+    <string name="install">تثبيت</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Via</item>
+    </string-array>
     <!-- Notifications -->
     <string name="notification">جاري التحميل $</string>
     <string name="bye">تمتع بالمتصفح الخاص بك!</string>
+    <!-- Toasts -->
+    <string name="not_connected">الرجاء إعداد اتصال بإنترنت أولاً</string>
+    <string name="downloading">بدء التحميل</string>
 </resources>

@@ -19,4 +19,5 @@
     <!-- Notifications -->
     <string name="notification">$ letöltése</string>
     <string name="bye">Használja a böngészőjét egészséggel!</string>
+    <!-- Toasts -->
 </resources>

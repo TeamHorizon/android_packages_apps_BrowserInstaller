@@ -16,7 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">ブラウザーインストーラー</string>
+    <string name="tutorial">以下のメニューからご希望のブラウザーを選択して下さい</string>
+    <string name="install">インストール</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Via</item>
+    </string-array>
     <!-- Notifications -->
     <string name="notification">ダウンロード中 $</string>
     <string name="bye">ブラウザーをお楽しみ下さい</string>
+    <!-- Toasts -->
+    <string name="not_connected">最初にインターネット接続を設定して下さい</string>
+    <string name="downloading">ダウンロードを開始しました</string>
 </resources>

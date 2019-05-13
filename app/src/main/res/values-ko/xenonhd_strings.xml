@@ -19,4 +19,5 @@
     <!-- Notifications -->
     <string name="notification">다운로드중...</string>
     <string name="bye">브라우저를 즐기십시오!</string>
+    <!-- Toasts -->
 </resources>
