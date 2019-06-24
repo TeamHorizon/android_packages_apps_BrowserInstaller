@@ -16,8 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Brauseri paigaldaja</string>
+    <string name="tutorial">Valige allpool olevast menüüst, millist brauserit soovite installida</string>
+    <string name="install">Installi</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Via</item>
+    </string-array>
     <!-- Notifications -->
     <string name="notification">Allalaadimine $</string>
     <string name="bye">Nautige oma brauserit!</string>
     <!-- Toasts -->
+    <string name="not_connected">Kõigepealt seadistage Interneti-ühendus</string>
+    <string name="downloading">Allalaadimist on alustatud</string>
 </resources>
