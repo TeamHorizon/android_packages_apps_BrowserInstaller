@@ -16,8 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Πρόγραμμα εγκατάστασης του προγράμματος περιήγησης</string>
+    <string name="tutorial">Επέλεξε ποιο φυλλομετρητή θέλεις να εγκαταστήσεις από το παρακάτω μενού</string>
+    <string name="install">Εγκατάσταση</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Via</item>
+    </string-array>
     <!-- Notifications -->
     <string name="notification">Γίνεται λήψη $</string>
     <string name="bye">Απολαύστε το πρόγραμμα περιήγησής σας!</string>
     <!-- Toasts -->
+    <string name="not_connected">Παρακαλώ ρυθμίστε πρώτα μια σύνδεση ίντερνετ</string>
+    <string name="downloading">Η λήψη ξεκίνησε</string>
 </resources>
