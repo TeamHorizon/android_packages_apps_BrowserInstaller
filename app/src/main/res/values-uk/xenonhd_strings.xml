@@ -15,6 +15,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Установник Браузера</string>
+    <string name="tutorial">У меню нижче виберіть браузер, який ви хочете встановити</string>
+    <string name="install">Встановити</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Via</item>
+    </string-array>
     <!-- Notifications -->
+    <string name="notification">Завантаження $</string>
+    <string name="bye">Насолоджуйтесь вашим браузером!</string>
     <!-- Toasts -->
+    <string name="not_connected">Будь ласка, спочатку встановіть підключення до Інтернету</string>
+    <string name="downloading">Завантаження розпочато</string>
 </resources>

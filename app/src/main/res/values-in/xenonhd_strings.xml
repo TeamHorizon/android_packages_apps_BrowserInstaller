@@ -15,6 +15,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Pemasang Browser</string>
+    <string name="tutorial">Pilih browser yang ingin Anda instal dari menu di bawah ini</string>
+    <string name="install">Memasang</string>
+    <string-array name="browsers_array">
+        <item>Chrome</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Melalui</item>
+    </string-array>
     <!-- Notifications -->
+    <string name="notification">Mengunduh $</string>
+    <string name="bye">Nikmati browser Anda!</string>
     <!-- Toasts -->
+    <string name="not_connected">Harap atur koneksi internet terlebih dahulu</string>
+    <string name="downloading">Pengunduhan dimulai</string>
 </resources>
